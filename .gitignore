@@ -1,0 +1,27 @@
+# Secrets — never commit these
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Node (if/when we add a UI)
+node_modules/
+dist/
+build/
+
+# Logs / local data
+*.log
+logs/
+local/
