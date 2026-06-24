@@ -1,0 +1,13 @@
+# Grandson — Python dependencies (M1: See & Explain; M2: Guided Takeover)
+#
+# Deliberately tiny. The screenshot uses macOS's built-in `screencapture` CLI,
+# so there is no screen-capture library here.
+#
+# M2 control mechanism: macOS's built-in `osascript` (System Events UI scripting
+# against NAMED elements). It is the architect's preferred, most-auditable option
+# (M2-PLAN §3) — the script literally names what it clicks — and it ships with
+# macOS, so M2 adds NO new pip dependency for control. We deliberately did NOT
+# add pyautogui/pynput/cliclick: osascript covers this task more auditably.
+
+anthropic>=0.40.0      # Claude — the brain (vision + planning)
+python-dotenv>=1.0.0   # load ANTHROPIC_API_KEY from a git-ignored .env
