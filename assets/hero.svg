@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="Grandson — an AI that helps people use their computer, like a patient grandkid.">
+  <defs>
+    <linearGradient id="gbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff9ef"/>
+      <stop offset="1" stop-color="#ffe8c4"/>
+    </linearGradient>
+    <linearGradient id="gink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c7791b"/>
+      <stop offset="1" stop-color="#e2a53d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="320" fill="url(#gbg)"/>
+  <g font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <text x="80" y="104" fill="#b07d2e" font-size="20" letter-spacing="6" font-weight="600">PATIENT HELP FOR EVERY GENERATION</text>
+    <text x="78" y="190" fill="url(#gink)" font-size="88" font-weight="800">Grandson</text>
+    <text x="80" y="238" fill="#5f4a24" font-size="29">Helps people use their computer, like a patient grandkid.</text>
+    <text x="80" y="280" fill="#8a6f3e" font-size="19">Watches the screen, explains in plain language, takes the wheel when asked — safety first.</text>
+  </g>
+  <g transform="translate(1012,96)">
+    <circle cx="64" cy="64" r="64" fill="#ffffff" opacity="0.6"/>
+    <circle cx="64" cy="52" r="26" fill="#e2a53d"/>
+    <path d="M24 118 a40 34 0 0 1 80 0 z" fill="#e2a53d"/>
+    <path d="M150 44 c0-13 20-13 20 0 c0 13-20 26-20 26 c0-0-20-13-20-26 c0-13 20-13 20 0 z" fill="#d9536a"/>
+  </g>
+</svg>
