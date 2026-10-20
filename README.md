@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/hero.svg" alt="Grandson — helps people use their computer, like a patient grandkid." width="100%" />
+</p>
+
 # Grandson 👴💛
 
 **An AI that helps people use their computer the way a patient grandkid would.**
