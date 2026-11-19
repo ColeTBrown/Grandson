@@ -80,10 +80,17 @@ Control mechanism: M2 drives macOS through the built-in `osascript` (System
 Events UI scripting against **named** elements), the most auditable option — the
 script literally names what it clicks. No extra control library is installed.
 
+## Browser extension
+Grandson also comes as a browser extension for Chrome and Edge (Windows, Mac, Chromebook).
+It watches every web page for scams and explains any page in plain words, with no Terminal
+needed. It only looks and explains; it does not control anything. See
+[`extension/README.md`](extension/README.md) to install and try it.
+
 ## Milestones
 - **M0 — Foundation** ✅ project + 5-agent dev team + safety policy
 - **M1 — See & Explain** ✅ screen narration, no control yet (zero risk, builds trust)
 - **M2 — Guided takeover** ✅ one real task end-to-end with risky-action gates live
+- **Browser extension v0.1** ✅ always-on web scam shield + explain-this-page (see `extension/`)
 - **M3 — Scam shield + self-update** always-on scam detection + the Tech-Watcher
 
 ## The dev team

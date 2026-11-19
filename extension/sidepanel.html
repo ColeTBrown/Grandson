@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grandson</title>
+  <link rel="stylesheet" href="grandson.css">
+</head>
+<body>
+  <div class="top">
+    <h1>Grandson</h1>
+    <div class="sizes" aria-label="Text size">
+      <button id="smaller" class="secondary small" title="Make the words smaller" aria-label="Make the words smaller">A&minus;</button>
+      <button id="bigger" class="secondary small" title="Make the words bigger" aria-label="Make the words bigger">A+</button>
+    </div>
+  </div>
+
+  <section id="status" class="card" aria-live="polite"></section>
+
+  <section id="setup" class="card caution" hidden>
+    <h2>One more step</h2>
+    <p>I need a key before I can explain pages. A family member can set this up in a minute.</p>
+    <p>I am already watching for scams, even without it.</p>
+    <button id="openSettings">Open Settings</button>
+  </section>
+
+  <div class="stack">
+    <button id="explain">Explain this page</button>
+    <button id="safety" class="secondary">Is this page safe?</button>
+  </div>
+
+  <form id="askForm">
+    <label for="question">Or ask me a question about this page</label>
+    <textarea id="question" rows="2" placeholder="For example: where do I click to pay my bill?"></textarea>
+    <div class="stack"><button type="submit" class="secondary" id="ask">Ask</button></div>
+  </form>
+
+  <div class="row" id="controls" hidden>
+    <button id="read" class="secondary small">Read it aloud</button>
+    <button id="stop" class="secondary small" hidden>Stop</button>
+  </div>
+
+  <section id="talk" aria-live="polite"></section>
+
+  <p class="footer">
+    When you press a button above, I send a picture of this page and its words to Claude so it can answer.
+    I never send anything on my own. <a href="#" id="settingsLink">Settings</a>
+  </p>
+
+  <script src="js/sidepanel.js"></script>
+</body>
+</html>

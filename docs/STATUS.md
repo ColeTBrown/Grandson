@@ -15,6 +15,19 @@ for the safety policy (which overrides every other goal).
   before anything risky** (money, passwords, deleting, sending, suspected scams)
 - **Release plan:** repo private now → flip to public at launch, with a license
 
+## Browser extension v0.1 (added 2026-11-19): BUILT, not yet run with a real key
+A Chrome/Edge extension lives in `extension/` (see `extension/README.md`). It is a separate
+JavaScript codebase; the Mac app in `src/grandson/` is unchanged.
+- Always-on scam shield on every web page (local, no key needed), with a full-width warning
+  banner and a trusted-family contact.
+- Side panel: Explain this page / Is this page safe? / ask a question, with read-aloud.
+- Look-and-explain only. No page control yet.
+- Verified: 20 unit tests on the scam rules; 10 end-to-end checks in real Chromium with
+  Claude replaced by a stand-in.
+- NOT verified: a real Claude call (no API key in the build environment), and the real
+  toolbar-icon / side-panel opening, which the headless test cannot click.
+- Next: live test with a key, tune the shield on real sites, then Chrome Web Store listing.
+
 ## Status
 - **M0 — Foundation: DONE.** Project scaffold, 5-agent team (`.claude/agents/`),
   safety policy, git repo, pushed to private GitHub repo **ColeTBrown/Grandson**.
