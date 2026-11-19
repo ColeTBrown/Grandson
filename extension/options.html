@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grandson - Settings</title>
+  <link rel="stylesheet" href="grandson.css">
+</head>
+<body>
+  <div class="page">
+    <h1>Grandson settings</h1>
+    <p>This page is usually filled in once, by a family member. After that, click the Grandson
+      picture at the top of the browser whenever you want help with a page.</p>
+
+    <h2>1. The key that lets Grandson explain pages</h2>
+    <p class="hint">Grandson uses Claude, made by Anthropic, to understand pages. That needs an
+      Anthropic API key, which you can create at console.anthropic.com. Each explanation costs a
+      few cents, charged to that account. The scam warnings work without a key.</p>
+    <label for="apiKey">Anthropic API key</label>
+    <input type="password" id="apiKey" autocomplete="off" spellcheck="false" placeholder="sk-ant-...">
+    <label class="check"><input type="checkbox" id="showKey"> Show the key while I type</label>
+    <p id="keyNotice" class="notice" role="status"></p>
+
+    <h2>2. Who to call when unsure</h2>
+    <p class="hint">If Grandson spots a scam, it will suggest calling this person before doing
+      anything. This is saved only in this browser and is never sent anywhere.</p>
+    <label for="familyName">Their name</label>
+    <input type="text" id="familyName" placeholder="For example: Sarah">
+    <label for="familyPhone">Their phone number</label>
+    <input type="tel" id="familyPhone" placeholder="For example: 555 123 4567">
+
+    <h2>3. Reading aloud</h2>
+    <label class="check"><input type="checkbox" id="autoRead"> Read every answer aloud automatically</label>
+
+    <div class="stack" style="margin-top:1.5rem">
+      <button id="save">Save</button>
+    </div>
+    <p id="saveNotice" class="notice" role="status"></p>
+
+    <h2>What Grandson sees and sends</h2>
+    <p>The scam warnings are worked out inside this browser. Nothing about the pages you visit is
+      sent anywhere for that.</p>
+    <p>Only when you press <b>Explain this page</b>, <b>Is this page safe?</b> or <b>Ask</b>,
+      Grandson sends a picture of the visible part of that page, the page's words and its web
+      address to Anthropic so Claude can answer. If the page shows private things, such as a bank
+      balance, they are in that picture. Words typed into password boxes are not readable in it.</p>
+    <p>Grandson can only look and explain. It cannot click, type, buy, or send anything.</p>
+  </div>
+  <script src="js/options.js"></script>
+</body>
+</html>
